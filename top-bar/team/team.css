@@ -1,0 +1,11 @@
+.team {
+	transform-origin: top;
+}
+
+.team.--left {
+	grid-area: team-left;
+}
+
+.team.--right {
+	grid-area: team-right;
+}

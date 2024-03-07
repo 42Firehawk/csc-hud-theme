@@ -1,0 +1,41 @@
+.series-name {
+	grid-area: series-name;
+
+	display: grid;
+	grid-template-columns: 2fr 4fr 2fr;
+	grid-template-areas: 'left center right';
+	width: 90%;
+	margin: 0 auto;
+}
+
+.left,
+.center,
+.right {
+	padding: 0.475rem;
+
+	color: var(--black);
+	font-size: 1.35rem;
+}
+
+.left,
+.right {
+	background: var(--white-50);
+}
+
+.left {
+	grid-area: left;
+}
+
+
+.center {
+	grid-area: center;
+
+	background: var(--white-75);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	font-weight: 700;
+	letter-spacing: 0.2em;
+}
+
+.right {
+	grid-area: right;
+}

@@ -1,0 +1,49 @@
+.name-wrapper {
+	font-size: 2.5rem;
+	max-height: var(--top-bar-row-height);
+	height: var(--top-bar-row-height);
+	width: var(--top-bar-row-width);
+	overflow: visible;
+	display: block;
+}
+
+.name-wrapper.--active {
+	width: var(--top-bar-row-width)/5;
+}
+
+.name {
+	height: var(--top-bar-row-height);
+}
+
+
+.name.--ct {
+	background: var(--counter-terrorists-fill-50);
+}
+
+.name.--t {
+	background: var(--terrorists-fill-50);
+}
+
+
+img.logo {
+	max-height: 100%;
+	object-fit: contain;
+}
+
+img.logo.--ct {
+	background: var(--counter-terrorists-fill);
+}
+
+img.logo.--t {
+	background: var(--terrorists-fill);
+}
+
+img.logo.--left {
+	float: left;
+	order: 1;
+}
+
+img.logo.--right {
+	float: right;
+	order: 1;
+}

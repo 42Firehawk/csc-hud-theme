@@ -1,0 +1,10 @@
+<div
+	:class="['top-bar-team-panel-wrapper', 'name-wrapper', positionClass, colorClass, { '--active': $round.isFreezetime }]">
+	<img :class="['logo', positionClass, colorClass, { '--active': logoImageLoaded }]"
+		:src="`/hud/team-logos/${team.name}.png`" alt="" @error="logoImageLoaded = false">
+	<div :class="['top-bar-team-panel', 'name', positionClass, colorClass]">
+		<div class="inner">
+			{{ team.name }}
+		</div>
+	</div>
+</div>
